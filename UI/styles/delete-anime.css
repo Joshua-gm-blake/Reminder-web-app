@@ -1,0 +1,16 @@
+.pullup{
+    animation: rollup;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rollup{
+    100%{
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+    }
+}
