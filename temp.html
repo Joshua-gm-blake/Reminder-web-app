@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+  <div class="container">
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4 hdr">Reminders</h1>
+      
+      <form class="search">
+        <input class="form-control m-auto" type="text" name="search" placeholder="search Reminders"/>
+      </form>
+    </header>
+
+    <ul class="list-group todos mx-auto text-light"></ul>
+
+    <form class="add text-center my-4">
+      <label class="text-light">Add a new Reminder...</label>
+      <input class="form-control m-auto" type="text" name="add" />
+    </form>
+  </div>
+
+  <div class="func-btn">
+    <div class="theme" title="Change color">
+      <i class="fa fa-paint-brush" aria-hidden="true"></i>
+    </div>
+  
+    <div class="restore" title="Restore deleted item">
+      <i class="fa fa-recycle" aria-hidden="true"></i>
+    </div>
+  </div>
+</body>
+</html>
